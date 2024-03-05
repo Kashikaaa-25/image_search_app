@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 2.7vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 2vw 0 2vw 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vw;
+    gap: 1.3vw;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 0.5vw 0.7vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    font-size: 1vw;
+    color: #333;
+}
+
+#search-button{
+    padding: 0.5vw 0.7vw;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1vw;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-result-outer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result-inner{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.search-result-inner img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;    
+    transition: opacity 0.2s ease-in-out;
+}
+
+.search-result-inner:hover img{
+    opacity: 0.8;
+}
+
+.search-result-inner a{
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button{
+    background-color: #008cba;
+    font-size: 1vw;
+    border: none;
+    color: white;
+    padding: 0.5vw 0.7vw;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 4vw;
+    }
+    #search-input{
+        width: 80%;
+        font-size: 2vw;
+    }
+    #search-button{
+        font-size: 2vw;
+    }
+    .search-result-outer{
+        padding: 20px;
+    }
+    .search-result-inner{
+        width: 45%;
+    }
+    .search-result-inner a{
+        font-size: 2vw;
+    }
+    #show-more-button{
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        font-size: 5vw;
+    }
+    #search-input{
+        width: 60%;
+        font-size: 3vw;
+    }
+    #search-button{
+        font-size: 3vw;
+        padding: 0.7vw 0.9vw;
+    }
+    #form{
+        gap: 1.6vw;
+    }
+    .search-result-inner{
+        width: 100%;
+    }
+    .search-result-inner a{
+        font-size: 3vw;
+    }
+    #show-more-button{
+        font-size: 3vw;
+    }
+    
+    
+    
+}
+
